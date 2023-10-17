@@ -39,7 +39,7 @@ const Monitor = () => {
 
           <div className='Welcome'>
             <h2>Welcome to ScrollOnyx</h2>
-            <p>"ScrollOnyx ($SNYX)" DAO, pegged to the price of $BONE</p>
+            <p>"ScrollOnyx ($SNYX)" DAO, pegged to the price of $Bond</p>
             <p>ScrollOnyx Finance is an algorithmic stable coin protocol pegged 1:1 to Scroll on Scroll Chain. Much like Basis Cash our protocol uses three tokens (SNYX, SSHRE, SBOND) to incentivize a stable 1:1 peg to USDC.
               The protocol's underlying mechanism dynamically adjusts SNYX supply, pushing its price up or down relative to the price USDC.</p>
             <p className='PLinks'>Read our <a href='https://scrollonyx.gitbook.io/scrollonyx/'>Gitbook</a></p>
