@@ -1,0 +1,126 @@
+.FarmingMonitor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.FarmingTitle h3,
+p {
+    color: #113946;
+}
+
+.FarmingBoxes {
+    display: flex;
+}
+
+.BigBoxes {
+    display: flex;
+    flex-direction: row;
+    color: #113946;
+}
+
+.IBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 30px;
+    background: linear-gradient(to bottom, #BCA37F, #d3b790);
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 15px 14px 11px -1px rgba(2, 2, 2, 0.35);
+}
+
+.IBoxTitle {
+    display: flex;
+}
+
+.IBoxChange {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ArrowPos {
+    margin-top: -50px;
+}
+
+.IBoxT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.IBoxTitle h3 {
+    margin-bottom: 20px;
+    color: #113946;
+}
+
+.IBoxT p {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #113946;
+}
+
+.IBoxT img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.IBoxTImage {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.IBox button {
+    cursor: not-allowed;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: #113946;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+}
+
+.IBox button:hover {
+    color: rgb(175, 175, 175);
+}
+
+@media screen and (max-width: 1024px) {
+    .FarmingMonitor {
+        height: auto;
+    }
+
+    .IBox {
+        margin: 10px;
+    }
+
+    .FarmingTitle {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .BigBoxes {
+        flex-direction: column;
+    }
+}

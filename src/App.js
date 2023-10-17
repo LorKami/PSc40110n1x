@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { HashRouter, Routes, Route, Outlet } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Error from './pages/Error';
+import BoardRoom from './components/BoardRoom';
+import Farming from './components/Farming';
+import Socialbar from './components/Socialbar';
+import Presales from './components/Presale';
 
-function App() {
+import { WagmiConfig, createConfig, configureChains, mainnet } from 'wagmi'
+import { publicProvider } from 'wagmi/providers/public'
+import Presale from './components/Presale';
+
+const App = () => {
+
+  const { chains, publicClient, webSocketPublicClient } = configureChains(
+    [mainnet],
+    [publicProvider()],
+  )
+
+  const config = createConfig({
+    autoConnect: true,
+    publicClient,
+    webSocketPublicClient,
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WagmiConfig config={config}>
+        <HashRouter>
+          <Navbar />
+          <Socialbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="BoardRoom" element={<BoardRoom />} />
+            <Route path="Presale" element={<Presales />} />
+            <Route path="Farm" element={<Farming />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </HashRouter>
+
+      </WagmiConfig>
     </div>
   );
 }

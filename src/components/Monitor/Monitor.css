@@ -1,0 +1,202 @@
+h2 {
+    color: #113946;
+    text-transform: uppercase;
+}
+
+.Monitor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.MonitorWV {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+}
+
+.Welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 800px;
+    background: linear-gradient(to bottom, #BCA37F, #d3b790);
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 15px 14px 11px -1px rgba(2, 2, 2, 0.35);
+}
+
+.Welcome p {
+    text-align: center;
+    color: #113946;
+}
+
+.Welcome .PLinks {
+    margin-bottom: 0px;
+}
+
+.Welcome a {
+    color: #113946;
+    font-weight: 700;
+}
+
+.Welcome h2,
+.Welcome p {
+    margin: 10px;
+}
+
+.VLock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-left: 40px;
+    background: linear-gradient(to bottom, #BCA37F, #d3b790);
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 15px 14px 11px -1px rgba(2, 2, 2, 0.35);
+}
+
+.VLock p {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    min-font-size: 1.5rem;
+    max-font-size: 3rem;
+}
+
+.MonitorBoxSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MonitorBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+    height: 350px;
+    margin-top: 30px;
+}
+
+.Boxes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(to bottom, #BCA37F, #d3b790);
+    border-radius: 40px 40px 40px 40px;
+    box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 15px 14px 11px -1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 15px 14px 11px -1px rgba(2, 2, 2, 0.35);
+}
+
+.Boxes img {
+    width: 85px;
+}
+
+.Boxes h2,
+.Boxes p {
+    margin: 0;
+}
+
+.Boxes p {
+    font-size: 16px;
+    color: white;
+}
+
+.Boxes .MBSmall {
+    font-size: 12px;
+}
+
+.Boxes h3 {
+    color: white;
+    font-weight: 700;
+    margin: 3px;
+}
+
+.WCoBtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 15px 15px 15px 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.WCoBtn span {
+    margin-right: 2px;
+}
+
+.WCoBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.WCo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .Welcome {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .MonitorWV {
+        flex-direction: column;
+    }
+
+    .Welcome {
+        margin-bottom: 30px;
+    }
+
+    .MonitorBoxes {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Welcome {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Welcome {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .Welcome {
+        width: 340px;
+    }
+}

@@ -1,0 +1,38 @@
+.SocialBar {
+    z-index: 999;
+    position: absolute;
+    display: flex;
+    right: 0%;
+    top: 50%;
+    background: linear-gradient(to bottom, #BCA37F, #BCA37F);
+    /* background: linear-gradient(to bottom, rgb(243, 5, 5), rgb(221, 13, 13)); */
+    border-radius: 30px 0px 0px 30px;
+    height: 140px;
+    transform: translate(-0%, -50%);
+    fill-opacity: 0.3;
+    transition: 0.2s ease-in-out;
+}
+
+.SocialBar:hover {
+    fill-opacity: 1;
+    background: linear-gradient(to bottom, #BCA37F, #d3b790);
+}
+
+.Socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.Socials a {
+    text-decoration: none;
+    color: #113946;
+}
+
+.Socials a:hover {
+    transform: scale(1.1);
+}
