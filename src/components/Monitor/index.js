@@ -62,7 +62,7 @@ const Monitor = () => {
               <img src={Onyx} />
               <h2>SNYX</h2>
               <p>1 SNYX (1.0 Peg) =</p>
-              <h3>-.---- $SNYX</h3>
+              <h3>-.--- $SNYX</h3>
               <p>$0 / $SNYX</p>
               <p className='MBSmall'>Market cap: $0</p>
               <p className='MBSmall'>Circulating supply: 44,000</p>
@@ -76,7 +76,7 @@ const Monitor = () => {
               <img src={Onyx} />
               <h2>SSHRE</h2>
               <p>1 SNYX (1.0 Peg) =</p>
-              <h3>-.---- $SSHRE</h3>
+              <h3>-.--- $SSHRE</h3>
               <p>$0 / $SSHRE</p>
               <p className='MBSmall'>Market cap: $0</p>
               <p className='MBSmall'>Circulating supply: 44,000</p>
@@ -90,7 +90,7 @@ const Monitor = () => {
               <img src={Onyx} />
               <h2>SBOND</h2>
               <p>1 SBOND (1.0 Peg) =</p>
-              <h3>-.---- $SBOND</h3>
+              <h3>-.--- $SBOND</h3>
               <p>$0 / $SBOND</p>
               <p className='MBSmall'>Market cap: $0</p>
               <p className='MBSmall'>Circulating supply: 44,000</p>
