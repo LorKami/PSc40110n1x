@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Presale.css'
 
-import CrowdfundingForm from './CrowdfundingForm';
-import CrowdfundingInfo from './CrowdfundingInfo';
+// import CrowdfundingForm from './CrowdfundingForm';
+// import CrowdfundingInfo from './CrowdfundingInfo';
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -90,12 +90,12 @@ const Presale = () => {
 
                         <div className='PresaleContributionBOHM'>
                             <div className='Contribution'>
-                                <CrowdfundingInfo />
+                                {/* <CrowdfundingInfo /> */}
                             </div>
                         </div>
 
                         <div className='CrowdfundingContainer'>
-                            <CrowdfundingForm />
+                            {/* <CrowdfundingForm /> */}
                         </div>
 
                         <div className='ButtonDashboard'>
